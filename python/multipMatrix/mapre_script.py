@@ -14,4 +14,5 @@ outputs = commands.getoutput("hadoop jar $HADOOP_HOME/hadoop-streaming-2.6.0.jar
 -reducer ./reducer.py  \
 -input testData/matrixdata.txt \
 -output testData/hadoopMMResult \
- ")
+")
+#outputs = commands.getoutput("hadoop fs -rmr hdfs://warrior:9000/user/warrior/testData/hadoopMMResult")
