@@ -82,6 +82,7 @@ class multiMatrixMap(object):
                     for item in matrix_value_P.findall(oneline):
                         matrix_value_row.append(int(item))
                     for i in range(0,len(matrix_value_row)):
+                                                    #M/N          row col num   forexample:M 0 0 1
                         output_string_list.append(matrix_name[0]+" %d %d %d"%((line_count-over_line_num-1), i, matrix_value_row[i]))
                 else:
                     line_count = 1
@@ -89,6 +90,8 @@ class multiMatrixMap(object):
                     matrix_name = matrix_name_P.findall(oneline)
                     # print matrix_name
                     # print "###"
+                    #row_colum_list[0/1] for row colum of M
+                    #row_colum_list[2/3] for row colum of N
         print "%d  %d  %d"%(row_colum_list[0], row_colum_list[1], row_colum_list[3])
         for item in output_string_list:
             print item
