@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Unique">
+    <output-path>$PROJECT_DIR$/out/artifacts/Unique</output-path>
+    <root id="archive" name="Unique.jar">
+      <element id="module-output" name="Unique" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
